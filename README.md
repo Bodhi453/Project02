@@ -1,4 +1,5 @@
 # Project 2 - Workout Tracker Website
+https://bodhi453.github.io/Project02/
 
 ## Overview
 This project is an updated version of my Project 1 workout website.
