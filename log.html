@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log Workout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">Workout Plan</a>
+        <a href="technique.html">Technique</a>
+        <a href="about.html">About Jeff</a>
+        <a href="log.html">Log Workout</a>
+        <a href="history.html">Progress History</a>
+        <button type="button" id="darkModeButton">Dark Mode</button>
+    </nav>
+
+    <h1>Log Workout</h1>
+    <hr>
+
+    <div class="formBox">
+        <h2>Login</h2>
+
+        <label for="userName">Name:</label>
+        <input type="text" id="userName">
+
+        <button type="button" id="loginButton">Login</button>
+        <button type="button" id="logoutButton">Logout</button>
+
+        <p id="welcomeMessage"></p>
+    </div>
+
+    <div class="formBox">
+        <h2>Workout Entry</h2>
+
+        <form id="workoutForm">
+            <label for="workoutDate">Date:</label>
+            <input type="date" id="workoutDate">
+
+            <label for="workoutDay">Workout Day:</label>
+            <select id="workoutDay">
+                <option value="">Select a workout day</option>
+                <option value="Push Hypertrophy">Push Hypertrophy</option>
+                <option value="Pull Hypertrophy">Pull Hypertrophy</option>
+                <option value="Legs Hypertrophy">Legs Hypertrophy</option>
+                <option value="Upper Body Strength">Upper Body Strength</option>
+                <option value="Lower Body Strength">Lower Body Strength</option>
+            </select>
+
+            <label for="exercise">Exercise:</label>
+            <select id="exercise">
+                <option value="">Select an exercise</option>
+            </select>
+
+            <label for="numberOfSets">Number of Sets:</label>
+            <input type="number" id="numberOfSets" min="1">
+
+            <div id="setInputs"></div>
+
+            <button type="submit">Save Workout</button>
+        </form>
+
+        <p id="logMessage"></p>
+    </div>
+
+    <footer>
+        <hr>
+        <p>Website created by Bodhi Pugliese</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
